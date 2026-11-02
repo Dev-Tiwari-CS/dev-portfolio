@@ -1,0 +1,3 @@
+- Portfolio content lives only in src/data/portfolio.ts; components read from it so the owner can edit without touching UI code.
+- Contact form submits via a Formspree endpoint set in that data file; it must never show success unless the request returns OK.
+- Derive the marquee from the categorized skills and conditionally render optional portfolio fields; this prevents duplicate skill lists and invented fallback content.
